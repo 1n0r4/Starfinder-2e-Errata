@@ -69,6 +69,38 @@ h1, h2, ul li {
   text-shadow: 0 0 10px rgba(63, 81, 181, 0.5), 0 0 20px rgba(0, 229, 255, 0.3);
 }
 
+// Accordion styles
+.accordion {
+  margin: 1em 0;
+}
+
+.accordion-header {
+  cursor: pointer;
+  background-color: rgba(63, 81, 181, 0.2);
+  padding: 0.75rem;
+  border: 1px solid rgba(63, 81, 181, 0.5);
+  border-radius: 4px;
+  color: $highlight-color;
+  text-shadow: 0 0 5px rgba(63, 81, 181, 0.4);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.accordion-header:hover {
+  background-color: rgba(63, 81, 181, 0.3);
+}
+
+.accordion-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  padding: 0 1em;
+  background-color: rgba(63, 81, 181, 0.1);
+  border: 1px solid rgba(63, 81, 181, 0.4);
+  border-radius: 4px;
+  margin-top: -5px;
+}
+
 // Responsive typography
 @media (max-width: 768px) {
   h1 {
@@ -79,5 +111,3 @@ h1, h2, ul li {
     font-size: 1.5rem;
   }
 }
-
-
