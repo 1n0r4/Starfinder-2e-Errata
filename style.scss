@@ -1,0 +1,83 @@
+// Variables for colors and fonts
+$background-color: #0f0f1f;
+$text-color: #e0e0ff;
+$highlight-color: #3f51b5;
+$accent-color: #00e5ff;
+
+$font-family: 'Roboto', sans-serif;
+$header-font-family: 'Orbitron', sans-serif;
+
+// Base styles
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+  color: $text-color;
+  font-family: $font-family;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-family: $header-font-family;
+  color: $highlight-color;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border-left: 4px solid $highlight-color;
+  border-radius: 4px;
+}
+
+ul li ul li {
+  background: rgba(255, 255, 255, 0.02);
+  margin: 0.25rem 0;
+  border-left: 4px solid $accent-color;
+}
+
+a {
+  color: $accent-color;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Add subtle glow effect for sci-fi feel
+h1, h2, ul li {
+  text-shadow: 0 0 10px rgba(63, 81, 181, 0.5), 0 0 20px rgba(0, 229, 255, 0.3);
+}
+
+// Responsive typography
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+
