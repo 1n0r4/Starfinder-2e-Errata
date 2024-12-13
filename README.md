@@ -1,5 +1,5 @@
-# Starfinder 2e Erratas Combined
-This little project is supposed to combine all the Erratas of the Starfinder 2e Playtest, that are not in the current PDF, at least to my current knowledge at the time of writing.
+# Starfinder 2e Playtest Erratas Combined
+This little project is supposed to combine all the Erratas of the Starfinder 2e Playtest, that are not in the current PDF, at least to my current knowledge at the time of writing. This includes Wave 2 and Wave 3.
 
 This is an unofficial fan made project, so read with care and check with official sources from Paizo.
 
