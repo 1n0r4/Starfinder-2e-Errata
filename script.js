@@ -19,4 +19,23 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    const themeToggle = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement;
+
+    // Check for saved theme preference or default to dark
+    const savedTheme = localStorage.getItem('site-theme') || 'dark';
+    htmlElement.setAttribute('data-theme', savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = htmlElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+        // Update theme attribute
+        htmlElement.setAttribute('data-theme', newTheme);
+
+        // Save preference
+        localStorage.setItem('site-theme', newTheme);
+    });
 });
+
